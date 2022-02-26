@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FC140A1E-EC40-4457-9E35-F116423B8DB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>test</RootNamespace>
+    <AssemblyName>test</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPerson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPerson.Designer.cs">
+      <DependentUpon>AddPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client.Designer.cs">
+      <DependentUpon>Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTransfers.Designer.cs">
+      <DependentUpon>CreateTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateTransport.Designer.cs">
+      <DependentUpon>CreateTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Direction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Direction.Designer.cs">
+      <DependentUpon>Direction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entry.Designer.cs">
+      <DependentUpon>Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hotel.Designer.cs">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelAdd.Designer.cs">
+      <DependentUpon>HotelAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HotelRoomAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HotelRoomAdd.Designer.cs">
+      <DependentUpon>HotelRoomAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoAbout.Designer.cs">
+      <DependentUpon>InfoAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookHotel.Designer.cs">
+      <DependentUpon>LookHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookHotelRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookHotelRoom.Designer.cs">
+      <DependentUpon>LookHotelRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookTransfers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookTransfers.Designer.cs">
+      <DependentUpon>LookTransfers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LookTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LookTransport.Designer.cs">
+      <DependentUpon>LookTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OtchetTransport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OtchetTransport.Designer.cs">
+      <DependentUpon>OtchetTransport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PytevkaCreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PytevkaCreate.Designer.cs">
+      <DependentUpon>PytevkaCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PytevkiName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PytevkiName.Designer.cs">
+      <DependentUpon>PytevkiName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepClient.Designer.cs">
+      <DependentUpon>RepClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transport.Designer.cs">
+      <DependentUpon>Transport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TravelDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TravelDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TravelDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddPerson.resx">
+      <DependentUpon>AddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTransfers.resx">
+      <DependentUpon>CreateTransfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateTransport.resx">
+      <DependentUpon>CreateTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Direction.resx">
+      <DependentUpon>Direction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Entry.resx">
+      <DependentUpon>Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hotel.resx">
+      <DependentUpon>Hotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelAdd.resx">
+      <DependentUpon>HotelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HotelRoomAdd.resx">
+      <DependentUpon>HotelRoomAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoAbout.resx">
+      <DependentUpon>InfoAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookHotel.resx">
+      <DependentUpon>LookHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookHotelRoom.resx">
+      <DependentUpon>LookHotelRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookTransfers.resx">
+      <DependentUpon>LookTransfers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LookTransport.resx">
+      <DependentUpon>LookTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OtchetTransport.resx">
+      <DependentUpon>OtchetTransport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PytevkaCreate.resx">
+      <DependentUpon>PytevkaCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PytevkiName.resx">
+      <DependentUpon>PytevkiName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepClient.resx">
+      <DependentUpon>RepClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Transport.resx">
+      <DependentUpon>Transport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transportwithoutid.rdlc" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TravelDataSet.xsc">
+      <DependentUpon>TravelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TravelDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelDataSet.xss">
+      <DependentUpon>TravelDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TravelDataSet1.xsc">
+      <DependentUpon>TravelDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="TravelDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TravelDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TravelDataSet1.xss">
+      <DependentUpon>TravelDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-computer-icons-login-user-system-administrator-admin-desktop-wallpaper-megaphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\world-transportation-icon-png-8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\otel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beach_PNG96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main-banner-2-en.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gratis-png-gente-levantando-las-manos-mientras-gritaba-en-ilustracion-de-jubilo-feliz-grupo-de-personas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\happy-people-jumping-youth-day-event_23-2148582578.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6706474_preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\44-448205_air-ticketing-airline-ticket-clipart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\airline-ticket-clipart-png-download-travel-tickets-clip-art-blank-plane-ticket-png-860_638.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main-banner-2-en1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngtree-bed-bedroom-clean-cleaning-abstract-flat-color-icon-template-png-image_1650281.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\227327.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
